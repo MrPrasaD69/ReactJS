@@ -1,0 +1,12 @@
+Hello Everyone. I'm new to react(from ASP.NET background)
+This is my Parent Component's method -
+``` greetParent=(childName)=>{
+        alert(`Hello ${this.state.parentName} from ${childName} `);
+    } ```
+
+This is my Child Component -
+ ``` <div>
+        <button onClick={()=>props.greetHandler('child')} className='btn btn-info m-2'>GREET PARENT</button>
+    </div> ```
+
+Now when i'm usng an arrow function in my Parent, it is works to show an alert box. When I use a normal function, it doesn't. I want to know the reason behind this.
