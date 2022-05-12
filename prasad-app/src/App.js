@@ -10,6 +10,13 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import TeacherComponent from './components/TeacherComponent';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
+import FragmentDemo from './components/FragmentDemo';
+import MemoComp from './components/MemoComp';
 
 
 
@@ -20,7 +27,7 @@ function App() {
       
       <Counter></Counter>
 
-      <Hello name='Prasad' />
+      {/* <Hello name='Prasad' /> */}
       {/*<p>this is child</p>*/}
       
       {/*
@@ -30,19 +37,33 @@ function App() {
       <Hello name='Rocky' />
       <input type='text'/> */}
       
-      <Welcome name='Prasad'></Welcome> 
+      {/* <Welcome name='Prasad'></Welcome>  */}
 
-      <FunctionClick></FunctionClick>
+      {/* <FunctionClick></FunctionClick> */}
 
-      <ClassClick></ClassClick>
+      {/* <ClassClick></ClassClick> */}
 
-      <EventBind></EventBind>
+      {/* <EventBind></EventBind> */}
       
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
 
-      <UserGreeting></UserGreeting>
+      {/* <UserGreeting></UserGreeting> */}
 
-      <NameList></NameList>
+      {/* <NameList></NameList> */}
+
+      <TeacherComponent></TeacherComponent>
+
+      {/* <StyleSheet></StyleSheet> */}
+
+      {/* <Inline></Inline> */}
+
+      {/* <Form></Form> */}
+
+      {/* <LifeCycleA></LifeCycleA> */}
+
+      <FragmentDemo></FragmentDemo>
+
+      <MemoComp></MemoComp>
 
     </div>
   );

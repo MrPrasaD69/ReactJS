@@ -12,8 +12,7 @@ class UserGreeting extends Component {
     {
         return(
             this.state.isLoggedIn ? //ternary operator approach
-            <div>Welcome Prasad</div> :
-            <div>Welcome Guest</div>
+            <div>Welcome Prasad</div> : <div>Welcome Guest</div>
         )
 
         // let message; //ELEMENT VARIABLE APPROACH

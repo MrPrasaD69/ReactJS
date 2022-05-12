@@ -5,7 +5,7 @@ const Hello =(props)=> {
     const {name} = props; //another way of destructuring
     return (
     <div className='Main-Frame'> 
-        <h2>Hello {name} </h2>
+        <h4>Hello {name} </h4>
         {/*{props.children}*/} 
     </div>  
     )

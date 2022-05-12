@@ -5,7 +5,7 @@ class Welcome extends Component{
         const {name} = this.props;
         return (
         <div className='Main-Frame'> 
-            <h2>Welcome, {name}. THiS is CLASS COMPONENT</h2> 
+            <h4>Welcome, {name}. THiS is CLASS COMPONENT</h4> 
         </div>)
         
     }

@@ -38,7 +38,7 @@ class Counter extends Component {
     return (
       <div>
         <hr />
-        <h2>Count : {this.state.count}</h2>
+        <h4>Count : {this.state.count}</h4>
         <button
           onClick={() => this.increment()}
           className="btn btn-success m-2"

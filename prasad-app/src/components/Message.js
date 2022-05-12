@@ -17,7 +17,7 @@ class Message extends Component {
   render() {
     return (
       <div>
-        <h3>{this.state.message}</h3>
+        <h4>{this.state.message}</h4>
         <button onClick={()=>this.changeMessage()} className="btn btn-danger">SUBSCRIBE</button>
       </div>
     );

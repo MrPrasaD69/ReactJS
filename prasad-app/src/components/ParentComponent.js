@@ -9,15 +9,16 @@ class ParentComponent extends Component {
          parentName:'Parent'
       }
     }
-
-    greetParent=(childName)=>{
-        alert(`Hello ${this.state.parentName} from ${childName} `);
+    
+    //
+    greetParent=(childName)=>{ 
+        alert(`Hello ${this.state.parentName} from ${childName} `); 
     }
 
   render() {
     return (
       <div>
-        <ChildComponent greetHandler={this.greetParent}></ChildComponent>
+        <ChildComponent greetHandler={this.greetParent}></ChildComponent> {/*Pass an attribute to child with method reference*/}
       </div>
     )
   }
