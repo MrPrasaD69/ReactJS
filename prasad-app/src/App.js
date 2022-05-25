@@ -16,7 +16,8 @@ import Inline from './components/Inline';
 import Form from './components/Form';
 import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
-import MemoComp from './components/MemoComp';
+import ClickCounter from './components/ClickCounter';
+// import MemoComp from './components/MemoComp';
 
 
 
@@ -63,7 +64,9 @@ function App() {
 
       <FragmentDemo></FragmentDemo>
 
-      <MemoComp></MemoComp>
+      {/* <MemoComp></MemoComp> */}
+
+      <ClickCounter/>
 
     </div>
   );
