@@ -20,15 +20,16 @@ import ClickCounter from './components/ClickCounter';
 // import MemoComp from './components/MemoComp';
 import PostList from './components/PostList';
 import PostForm from './components/PostForm';
+import ClassCounter from './hookcomponents/ClassCounter';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Message/>
+      {/* <Message/> */}
       
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
 
       {/* <Hello name='Prasad' /> */}
       {/*<p>this is child</p>*/}
@@ -54,7 +55,7 @@ function App() {
 
       {/* <NameList></NameList> */}
 
-      <TeacherComponent></TeacherComponent>
+      {/* <TeacherComponent></TeacherComponent> */}
 
       {/* <StyleSheet></StyleSheet> */}
 
@@ -64,15 +65,17 @@ function App() {
 
       {/* <LifeCycleA></LifeCycleA> */}
 
-      <FragmentDemo></FragmentDemo>
+      {/* <FragmentDemo></FragmentDemo> */}
 
       {/* <MemoComp></MemoComp> */}
 
-      <ClickCounter/>
+      {/* <ClickCounter/> */}
 
       {/* <PostList></PostList> */}
 
-      <PostForm></PostForm>
+      {/* <PostForm></PostForm> */}
+
+      <ClickCounter></ClickCounter>
 
     </div>
   );
