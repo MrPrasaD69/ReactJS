@@ -18,6 +18,7 @@ import LifeCycleA from './components/LifeCycleA';
 import FragmentDemo from './components/FragmentDemo';
 import ClickCounter from './components/ClickCounter';
 // import MemoComp from './components/MemoComp';
+import PostList from './components/PostList';
 
 
 
@@ -67,6 +68,8 @@ function App() {
       {/* <MemoComp></MemoComp> */}
 
       <ClickCounter/>
+
+      <PostList></PostList>
 
     </div>
   );
