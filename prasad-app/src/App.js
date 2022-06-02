@@ -19,6 +19,7 @@ import FragmentDemo from './components/FragmentDemo';
 import ClickCounter from './components/ClickCounter';
 // import MemoComp from './components/MemoComp';
 import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 
 
@@ -69,7 +70,9 @@ function App() {
 
       <ClickCounter/>
 
-      <PostList></PostList>
+      {/* <PostList></PostList> */}
+
+      <PostForm></PostForm>
 
     </div>
   );

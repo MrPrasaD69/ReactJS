@@ -30,7 +30,7 @@ class PostList extends Component {
           <h3>PostList COMPONENT</h3>
           {
               posts.length ?
-              posts.map(post=><div key={post.id}>{post.title}</div>) : "DATA NOT FOUND"
+              posts.map(post=><div className='list' key={post.id}>{post.title}</div>) : "DATA NOT FOUND"
           }
       </div>
     )
