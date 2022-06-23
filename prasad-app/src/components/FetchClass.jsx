@@ -7,7 +7,17 @@ class FetchClass extends Component{
             data:[]
         }
     }
-    componentDidMount(){
+    //With lifecycle method.
+    // componentDidMount(){
+    //     fetch("https://jsonplaceholder.typicode.com/posts")
+    //     .then((res)=>res.json())
+    //     .then(datalist => {
+    //         this.setState({data:datalist});
+    //     })
+    // }
+
+    //With a button click.
+    GetData=()=>{
         fetch("https://jsonplaceholder.typicode.com/posts")
         .then((res)=>res.json())
         .then(datalist => {
@@ -19,6 +29,7 @@ class FetchClass extends Component{
         return(
             <div>
                 <p>Hi</p>
+                <button onClick={this.GetData}>Get DATA</button>
                 {
                     this.state.data.map((newdata)=>{
                         return(
