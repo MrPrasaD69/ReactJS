@@ -1,3 +1,3 @@
-# ReactJS Projects
+REACTJS PROJECTS FOR SELF-LEARNING
 
-Created and Tested by myself.
+Includes all the projects I have made combining various tutorials and blog posts.
