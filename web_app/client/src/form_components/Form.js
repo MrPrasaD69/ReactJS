@@ -2,7 +2,7 @@ import UserForm from "./UserForm";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const FORM_ENDPOINT =
-  "https://practical-roentgen.31-187-70-64.plesk.page/api/Api.php"; // TODO - update to the correct endpoint
+  "https://your_api_here"; // TODO - update to the correct endpoint
 
 const Form = () => {
   const [firstname, setFirstname] = useState("");
