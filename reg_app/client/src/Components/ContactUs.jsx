@@ -2,7 +2,11 @@ import React, { useState,useCallback } from 'react'
 
 export default function ContactUs() {
 
-    const [formData, setFormData] = useState({ first_name: '' });
+    const [formData, setFormData] = useState({ 
+        first_name: '',
+        last_name:'',
+        email_id:''
+        });
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -24,7 +28,8 @@ export default function ContactUs() {
 
             const responseData = await response.json();
             console.log(responseData);
-        } catch (error) {
+        } 
+        catch (error) {
             console.error('Error:', error);
     }
 }
@@ -461,13 +466,13 @@ export default function ContactUs() {
                                     <div className="labelpadding">
                                         <label for="lastname" className="pfs20roboto">Last Name</label>
                                         {/* <input type="text" name="last_name" value={last_name} onChange={(e)=>{setLastname(e.target.value)}} className="form-control" id="lastname" placeholder="Please enter your last name" /> */}
-                                        {/* <input type="text" name="last_name" value={last_name} onChange={handleChange} className="form-control" id="lastname" placeholder="Please enter your last name" /> */}
+                                        <input type="text" name="last_name" value={formData.last_name} onChange={handleChange} className="form-control" id="lastname" placeholder="Please enter your last name" />
                                     </div>
                                 </div>
                                 <div className="col-12">
                                     <div className="labelpadding">
                                         <label for="email" className="pfs20roboto">Email ID</label>
-                                        {/* <input type="email" name="email_id" value={email_id} onChange={(e)=>{setEmailid(e.target.value)}} className="form-control" id="emailid" placeholder="Please enter your email id" /> */}
+                                        <input type="email" name="email_id" value={formData.email_id} onChange={handleChange} className="form-control" id="emailid" placeholder="Please enter your email id" />
                                     </div>
                                 </div>
                                 
