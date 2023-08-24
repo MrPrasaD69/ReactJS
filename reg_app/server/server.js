@@ -23,8 +23,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/store-data',(req,res)=>{
-    let data = {name:req.body.first_name};
-    let sql = "INSERT INTO users SET ?";
+    let data = {
+        first_name:req.body.first_name,
+        last_name:req.body.last_name,
+        email_id:req.body.email_id,
+
+    };
+    let sql = "INSERT INTO tbl_node_users SET ?";
     let query = conn.query(sql, data, (err, results)=>{
         if(err) throw err;
         res.send(JSON.stringify({"status":200, "error":null}))
